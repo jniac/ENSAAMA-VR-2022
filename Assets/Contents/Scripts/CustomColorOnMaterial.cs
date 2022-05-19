@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeMaterialColor : MonoBehaviour
+public class CustomColorOnMaterial : MonoBehaviour
 {
     public string colorName = "_BaseColor";
     public Color customColor = Color.cyan;
