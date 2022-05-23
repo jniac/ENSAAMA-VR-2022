@@ -9,7 +9,7 @@ public class CustomColorOnAllMaterials : MonoBehaviour
 
     Dictionary<Material, Color> initialColors = new Dictionary<Material, Color>();
 
-    void EnterCustomColor()
+    public void EnterCustomColor()
     {
         var materials = GetComponentsInChildren<MeshRenderer>()
             .SelectMany(mr => mr.materials)
@@ -22,7 +22,7 @@ public class CustomColorOnAllMaterials : MonoBehaviour
         }  
     }
 
-    void ExitCustomColor()
+    public void ExitCustomColor()
     {
         foreach(var entry in initialColors)
         {
